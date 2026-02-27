@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MultiAce Tools - Ace Image to PDF Converter</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+  
+  <!-- AdSense Code -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4115526202821283"
+    crossorigin="anonymous"></script>
+</head>
+<body>
+  <!-- Header with Navigation -->
+  <header>
+    <h1>MultiAce Tools</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="policies.html">Policies</a>
+      <a href="contact.html">Contact Us</a>
+      <a href="terms.html">Terms of Service</a>
+    </nav>
+  </header>
+
+  <!-- Consent Banner -->
+  <div id="consent-banner" style="position: fixed; bottom: 0; width: 100%; background-color: #333; color: #fff; padding: 15px; text-align: center; border-top: 2px solid #444; z-index: 1000;">
+    <p style="margin: 0; font-size: 1rem;">
+      We use cookies and similar technologies to enhance your experience, serve personalized ads, and analyze traffic. By clicking "Consent," you agree to our use of cookies. Click "Do Not Consent" to decline or "Manage" to customize your preferences.
+    </p>
+    <div style="margin-top: 10px;">
+      <button id="consent-button" style="margin: 0 5px; padding: 10px 15px; background-color: #4CAF50; color: #fff;">Consent</button>
+      <button id="do-not-consent-button" style="margin: 0 5px; padding: 10px 15px; background-color: #f44336; color: #fff;">Do Not Consent</button>
+      <button id="manage-button" style="margin: 0 5px; padding: 10px 15px; background-color: #FFC107; color: #fff;">Manage</button>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById('consent-button').addEventListener('click', function() {
+      document.getElementById('consent-banner').style.display = 'none';
+    });
+
+    document.getElementById('do-not-consent-button').addEventListener('click', function() {
+      document.getElementById('consent-banner').style.display = 'none';
+    });
+
+    document.getElementById('manage-button').addEventListener('click', function() {
+      alert('Manage preferences option clicked.');
+    });
+  </script>
+
+  <!-- Reserved Space for Ads -->
+  <div id="ad-space" style="text-align: center; margin-bottom: 10px;">
+    <script>
+      (adsbygoogle = window.adsbygoogle || []).push({
+        google_ad_client: "ca-pub-4115526202821283",
+        enable_page_level_ads: true
+      });
+    </script>
+  </div>
+
+  <!-- Main Container -->
+  <div class="container">
+    <h1>Welcome!</h1>
+    <p>Presenting <strong>Ace Image to PDF Converter</strong> - Drag and drop your images, apply filters, and convert them into a PDF!</p>
+
+    <div id="drop-zone">
+      <p>Drag and drop your images here or click to select files</p>
+      <input type="file" id="image-input" accept="image/*" multiple>
+    </div>
+
+    <div id="preview"></div>
+    <div class="filters">
+      <label for="filter-select">Choose a Filter:</label>
+      <select id="filter-select">
+        <option value="none">None</option>
+        <option value="grayscale">Grayscale</option>
+        <option value="sepia">Sepia</option>
+        <option value="blur">Blur</option>
+        <option value="contrast">High Contrast</option>
+      </select>
+    </div>
+    <div class="custom-controls">
+      <label for="brightness-slider">Brightness:</label>
+      <input type="range" id="brightness-slider" min="0.5" max="2" step="0.1" value="1">
+      <label for="contrast-slider">Contrast:</label>
+      <input type="range" id="contrast-slider" min="0.5" max="2" step="0.1" value="1">
+    </div>
+    <button id="convert-pdf">Convert to PDF</button>
+  </div>
+
+  <footer>
+    <p>Powered by <strong>MultiAce Tools</strong>, featuring <strong>Ace Image to PDF Converter</strong>, © 2025...</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+

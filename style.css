@@ -1,0 +1,119 @@
+/* General Page Styling */
+body {
+  font-family: 'Verdana', sans-serif;
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Ensures spacing between header, main, and footer */
+  align-items: center;
+  margin: 0;
+  height: 100vh; /* Fits everything within the screen */
+}
+
+/* Header Styling */
+header {
+  background: rgba(0, 0, 0, 0.6); /* Matches the main container background */
+  color: white;
+  padding: 10px;
+  text-align: center;
+  border-bottom: 2px solid #444; /* Subtle separator */
+  width: 100%;
+  box-sizing: border-box;
+}
+
+nav a {
+  color: #FFD700; /* Gold for navigation links */
+  text-decoration: none;
+  margin: 0 20px;
+  font-size: 0.95rem;
+}
+
+nav a:hover {
+  color: #FFF; /* Changes to white on hover */
+}
+
+/* Main Content */
+.container {
+  text-align: center;
+  background: rgba(0, 0, 0, 0.6); /* Semi-transparent dark background */
+  padding: 40px; /* Increased padding for a larger container */
+  border-radius: 15px;
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.4);
+  width: 80%;
+  margin-bottom: 20px; /* Space between the container and footer */
+}
+
+h1 {
+  font-size: 2rem; /* Increased font size */
+  margin-bottom: 15px;
+}
+
+p {
+  font-size: 1rem;
+  margin-bottom: 50px;
+}
+
+input {
+  margin: 10px 0;
+}
+
+/* Drop Zone Styling */
+#drop-zone {
+  border: 2px dashed #ffffff;
+  padding: 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-bottom: 15px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+#drop-zone:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* Preview Panel */
+#preview {
+  display: flex;
+  flex-wrap: wrap; /* Allows images to wrap */
+  justify-content: center; /* Centers images */
+  gap: 10px; /* Space between images */
+  margin-top: 20px;
+}
+
+#preview img {
+  max-width: 250px; /* Enlarged size */
+  max-height: 250px; /* Enlarged size */
+  border: 2px solid white;
+  border-radius: 5px;
+}
+
+/* Button Styling */
+button {
+  background: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background: #3e8e41;
+}
+
+/* Footer Styling */
+.footer-container {
+  text-align: center;
+  background: rgba(30, 30, 30, 0.8); /* Slightly darker background */
+  padding: 10px; /* Compact size */
+  border-radius: 15px;
+  width: 80%;
+  font-size: 0.9rem;
+  align-self: flex-end; /* Ensures footer sticks to the bottom */
+}
+
+
+
+
