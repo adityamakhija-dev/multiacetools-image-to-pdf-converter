@@ -2,7 +2,7 @@
 
 ![Project Preview](multiacetools-image-to-pdf-preview.png)
 
-🚀 **Live Demo:**  
+🚀 **Live:**  
 https://multiacetools-image-to-pdf-converter.netlify.app/
 
 ---
